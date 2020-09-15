@@ -1,0 +1,249 @@
+
+	
+
+
+
+	
+	
+	:root{
+		--green: #10C957;
+		--red: #F9246A;
+	}
+	a:link{
+		text-decoration: none;
+	}
+	a{
+		color: var(--green);
+	}
+	body{
+		background: linear-gradient( rgba(40, 40, 40, 0.10), rgba(40, 40, 40, 0.10)), url(../img/bg.svg);
+  		background-position: center center;
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+	}
+
+	body, html{
+		font-family: Roboto, san serif;
+		margin: 0px;
+		padding: 0px;
+	}
+	.alert{
+		text-align: center;
+		letter-spacing: 4px;
+		font-size: 18px;
+		color: var(--green);
+		text-transform: uppercase;
+		font-weight: 50px;
+	}
+	.alert-incorrect{
+		color: var(--red);
+	}
+	.btn-check{
+		padding: 20px;
+		font-size: 14px;
+		width: 100%;
+		height: 80px;
+		cursor: pointer;
+		height: auto;
+		cursor: pointer;
+		border-radius: 180px;
+		border-size: 1px;
+		border: solid var(--green);
+		color: var(--green);
+		background-color: white;
+	}
+	.btn-choices{
+		opacity: 0; 
+		position: absolute; 
+		width:0;
+		cursor: pointer;
+		display: hidden;
+	}
+	.btn-check-container{
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+	.btn-next{
+		padding: 10px;
+		font-size: 14px;
+		width: 100px;
+		height: auto;
+		cursor: pointer;
+		border-radius: 180px;
+		border-size: 1px;
+		border: solid var(--green);
+		color: var(--green);
+		background-color: white;
+	}
+	.btn-tab{
+		padding: 5px;
+		font-size: 14px;
+		text-align: center;
+		width: 30%;
+		height: auto;
+		margin-left:10%;
+		cursor: pointer;
+		border-radius: 180px;
+		border-size: 1px;
+		border: solid var(--green);
+		color: var(--green);
+		background-color: white;
+		position: center;
+	}
+	.box{
+		width: 100%;
+	}
+	.box-next{
+		width: 5%;
+	}
+	.box-headtxt{
+		width: 70%;
+		text-align: left;
+		letter-spacing: 4px;
+		font-size: 14px;
+		color: var(--green);
+	}
+	.container{
+		padding: 24px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		border: solid var(--green);
+		border-size: 4px;
+	}
+	.container-test, .container-solution{
+		border: solid var(--green);
+		border-radius: 10px;
+		margin-top: 3%;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 50px;
+	}
+	.container-solution{
+		margin-top: 10.8%;
+		margin-bottom: 21.3%;
+	}
+	.correct{
+		background-color: var(--green) !important;
+		color: white !important;
+	}
+	.choice-wrapper{
+		margin-top: 10%;
+		display: flex;
+		flex: wrap;
+	}
+	.footer-div{
+		margin-top: 2%;
+	}
+	.footer-txt{
+		text-align: center;
+		position: center;
+		margin-top:5%;
+		color: var(--green);
+		font-size: 14px;
+	}
+	.divider{
+		height: 5px;
+		background-color: var(--green);
+		width: 100%;
+	}
+	.head-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.incorrect{
+		background-color: var(--red) !important;
+		color: white !important;
+		border-color: var(--red) !important;
+	}
+	.lbl-choice:after{
+		margin-left: 5%;
+	}
+	.lbl-choice{
+		text-align: center;
+		font-size: 14px;
+		cursor: pointer;
+		width: 100%;	
+	}
+	.lbl-container{
+		padding: 8px;
+		font-size: 14px;
+		text-align: center;
+		height: auto;
+		cursor: pointer;
+		border-radius: 180px;
+		border-size: 1px;
+		border: solid var(--green);
+		color: var(--green);
+		background-color: white;
+		position: center;
+		margin: 4%;
+		margin-top: 3%;
+	}
+	.no-border{
+		border-style: none !important;
+	}
+	.test, .solution-txt{
+		color: var(--green);
+	}
+	.tab{
+		margin-top: 3%;
+		display: flex;
+		flex-wrap: wrap;
+		overflow:hidden;
+		margin-bottom: 3%;
+	}
+	.tab div.active {
+  		background-color: var(--green);
+		color: white;
+	}
+	.tab div{
+		transition: 0.3s;
+	}
+	.txt-link{
+		text-decoration: underline !important;
+		font-size: 1.5em;
+	}
+/* extra effects */
+.align-center{
+		display: grid;
+  		place-items: center;
+  		height: 100vh;
+	}
+	.btn-next:hover{
+		background-color: var(--green);
+		color: white;
+		transition-duration: 0.5s;
+	}
+	.btn-check:hover{
+		background-color: var(--green);
+		color: white;
+		transition-duration: 0.5s;
+	}
+	.lbl-container:hover{
+		background-color: var(--green);
+		color: white;
+		transition-duration: 0.5s;
+	}
+	.btn-tab:hover{
+		background-color: var(--green);
+		color: white;
+		transition-duration: 0.5s;
+	}
+/* background design for choices buttons*/
+	/*.lbl-choice:hover input ~ .lbl-container {
+    	background-color: var(--green);
+		color: white;
+	}
+*/
+/*	input[type="radio"]:checked{
+    	background-color: var(--green);
+    	background-color: red;
+		color: white;
+	}*/
+/* background design for choices buttons*/
+	input:checked + label {
+    background-color: var(--green);
+    color: white;
+}

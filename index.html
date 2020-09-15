@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+<body onload="displayResult(), tabControl()">
+<div class="align-center">
+	<div class="container">
+		<div class="main">
+				<div class="head-wrapper">
+					<div class="box-headtxt">
+						<h3 class="header-txt">
+							Can you Find <br>The Missing Number?
+						</h3>
+					</div>
+					<div class="box-next">
+						<button class="btn-next" onclick="displayResult(), removeDesign();">Next</button>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="alert-container">
+					<h2 class="alert">&nbsp;</h2>
+				</div>
+				<div id="form">
+					<div class="container-test">
+						<h3 class="test"></h3>
+					</div>
+					<div class="tab">
+						<div id="defaultOpen" class="btn-tab tablinks" onclick="switchContent(event, 'choices')">
+							Choices
+						</div>
+						<div class="btn-tab tablinks" onclick="switchContent(event, 'solution')">
+							Solution
+						</div>
+					</div>
+					<div id="choices" class="tabcontent">
+						<div class="choice-wrapper" id="choiceWrapper">
+							<!-- 1 -->
+							<label class="box lbl-choice">
+								<input type="radio" name="choices" class="btn-choices input-one">
+								<label class="lbl-container label-one">
+								</label>
+							</label>
+							<!-- 2 -->
+							<label class="box lbl-choice">
+								<input type="radio" name="choices" class="btn-choices input-two">
+								<label class="lbl-container label-two">
+								</label>
+							</label>
+							<!-- 3 -->
+							<label class="box lbl-choice">
+								<input type="radio" name="choices" class="btn-choices input-three">
+								<label class="lbl-container label-three">
+								</label>
+							</label>
+							<!-- 4 -->
+							<label class="box lbl-choice">
+								<input type="radio" name="choices" class="btn-choices input-four">
+								<label class="lbl-container label-four">
+								</label>
+							</label>
+						</div>
+						<div class="btn-check-container">
+							<button onclick="onSubmit()" class="btn-check">Check</button>
+						</div>
+					</div>
+					<div id="solution" class="tabcontent">
+						<div class="container-solution">
+							<h3 class="solution-txt"></h3>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="footer-div">
+					<h1 class="footer-txt">
+						Created by: <a href="#" class="txt-link">Darwin</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/logic.js">
+</script>
+</body>
+</html>
